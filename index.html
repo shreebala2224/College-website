@@ -1,81 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>KSR</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initaial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="ksrstyle.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <title>KSR College</title>
+    <link rel="stylesheet" href="ksrstyle.css">
 </head>
 <body>
 
-	<nav>
-		<div class="logo">
-			<p>K.S.RANGASAMY COLLEGE OF TECHNOLOGY </p>
-		</div>
-		<ul>
-			<select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 65px; font-size: 20px; background-color:   #0052A7; color: white;">
-			<li><option value="" class="active">Login</a></li></option>
-			<li><option value="http://ctcms.ksrct.net/Student/Index.asp" target="blank" >Student Login</option></li>
-			<li><option value="http://ctcms.ksrct.net/Faculty/Index.asp" target="blank">Faculty Login</option></li>
-				<li><option value ="https://www.ksrctdigipro.in/" target="blank">Digipro</option></li>
-		</select>
-		<select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 65px; font-size: 20px; background-color:   #0052A7; color: white;">
-			<li><option value="" selected>Location</option></li>
-			<li><option value="https://www.google.co.in/maps/dir//K.+S.+Rangasamy+College+of+Technology,+KSR+Kalvi+Nagar,+Tiruchengode,+Namakkal,+Tamil+Nadu+637215/@11.3627573,77.8257303,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba964016c607823:0x580736a65c2b0005!2m2!1d77.827919!2d11.362752!3e0" target="blank">College</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R7H%2BC87+Lakshmi+Vilas+Bank+ATM,+K.S.+Ranga+Swamy+Institute+of+Technology,+Erode+Main+Road+Paramasiva+Goundampalayam,+THOKKAVADI,+SH+79,+KSR+Kalvi+Nagar,+Tamil+Nadu+637215/@11.363533,77.8280023,21z/data=!4m20!1m10!4m9!1m0!1m6!1m2!1s0x3ba964016c607823:0x580736a65c2b0005!2sK.+S.+Rangasamy+College+of+Technology,+KSR+Kalvi+Nagar,+Tiruchengode,+Namakkal,+Tamil+Nadu+637215!2m2!1d77.827919!2d11.362752!3e0!4m8!1m0!1m5!1m1!1s0x3ba966a9b25eb5d1:0x1932e1a813da22!2m2!1d77.8283073!2d11.3635419!3e0">Lakshmi vilas Bank</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R7H%2B56P+KSRCT+Principal+Office,+KSR+Institute+Rd,+Tamil+Nadu+637215/@11.3629104,77.8280505,20.25z/data=!4m20!1m10!4m9!1m0!1m6!1m2!1s0x3ba966a84abdb47f:0xe41969e1cfeccaa4!2s9R7H%2B56P+KSRCT+Principal+Office,+KSR+Institute+Rd,+Tamil+Nadu+637215!2m2!1d77.828005!2d11.3631027!3e0!4m8!1m0!1m5!1m1!1s0x3ba966a84abdb47f:0xe41969e1cfeccaa4!2m2!1d77.828005!2d11.3631027!3e0"> Principal Office</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//KSR+Founder+Hall,+Auditorium,+Tamil+Nadu+637215/@11.3627566,77.826215,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba966a9ca4b15bf:0x10b7566bd4ce37e2!2m2!1d77.8283899!2d11.3627698!3e0">Founder Hall</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R7H%2B67C+Conference+Hall+Ksrct,+Thiruchengodu,+Tamil+Nadu+637215/@11.3630725,77.8259603,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba966a9b4d7dd21:0x3b6e7ee79b61d22a!2m2!1d77.8281451!2d11.3630752!3e0">Conference Hall</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//KSR+Institutions+Bike+Parking,+KSR+College,+KSR+Kalvi+Nagar,+Tamil+Nadu+637215/@11.3630189,77.8283542,21z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba967cfd1e24e47:0x2b0a8a36b2515d48!2m2!1d77.8286021!2d11.3632007!3e0">Bike Parking</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//Placement+And+Training+Cell,+KSRCT,+KSR+Institute+Rd,+Tamil+Nadu+637215/@11.3621247,77.8279183,20.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba966a82c2001a9:0x2f438515cc28d5b7!2m2!1d77.8278202!2d11.3619303!3e0">Placement & Training cell</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R6G%2BVVV+KSR+Food+Court+5,+Tiruchengode,+Tamil+Nadu+637215/@11.362372,77.8272109,20.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba967a34ed6de11:0xe2b1e4a7c27a6cc4!2m2!1d77.8271826!2d11.362225">Food Court 5</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//KSR+Dental+Hospital,+KSR+Educational+Institutions,+KSR+Institute+Rd,+Tiruchengode,+Tamil+Nadu+637215/@11.3620249,77.8263325,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a81c39e8e3:0xd5e203090c3a3448!2m2!1d77.8263195!2d11.3616567">Dental Hospital</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//KSR+Institute+of+Dental+Science+and+Research,+KSR+Kalvi+Nagar,+Thokkavadi,+Tamil+Nadu+637215/@11.3619355,77.826826,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a83eac281f:0x586cf9d0378aecb0!2m2!1d77.826307!2d11.361713">Dental & Research</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//Ksrct+Library,+KSRCT+Library+Block,+KSR+Library,+KSR+Institute+Rd,+Thiruchengodu,+Tamil+Nadu+637215/@11.3619881,77.8266249,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a8264f20f5:0x5b8b0f1e0e5581ea!2m2!1d77.8274412!2d11.3616509">Library</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R6H%2BH29+Laxmi+Vilas+Bank+%26+ATM,+Tamil+Nadu+637215/@11.3614421,77.8275348,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba9640284f1e40f:0x1722deb6753d292b!2m2!1d77.8276155!2d11.3614021">Lakshmi Vilas ATM</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//Works+and+Soil+Lab,+Labs,+Tamil+Nadu+637215/@11.3616005,77.827848,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96402801dd62d:0x29b0fc2401e784d3!2m2!1d77.8281244!2d11.3614937">Work & soil Lab</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R6H%2BG2Q+Canteen+2,+KSR+Institute+Rd,+Tamil+Nadu+637215/@11.3613517,77.8273657,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba964028256253f:0x808a1840d0532584!2m2!1d77.8276026!2d11.3613536">Canteen</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//Dental+Ladies+Hostel,+Tamil+Nadu+637215/@11.3608249,77.8271571,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba9640299c6b56b:0x4a29fb973bbe549b!2m2!1d77.8270122!2d11.3608815">Dental Ladies Hostel</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R6G%2B3Q7+KSR+College+Staff+Quarters,+KSR+Kalvi+Nagar,+Thokkavadi,+Tamil+Nadu/@11.3602938,77.8270965,21z/data=!4m15!1m6!3m5!1s0x3ba9640294e1aea5:0xc5f791862fac74b3!2sKSR+College+Staff+Quarters!8m2!3d11.3601499!4d77.82698!4m7!1m0!1m5!1m1!1s0x3ba9640294e1aea5:0xc5f791862fac74b3!2m2!1d77.82698!2d11.3601499">Staff Quarters</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R5G%2BXX6+IT+Park,+KSRCT,+Tamil+Nadu+637215/@11.3599171,77.8273721,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96402ed828d99:0x2475158f6fa329f2!2m2!1d77.8274006!2d11.3599139">IT Park</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//Parking+Lot,+Tamil+Nadu+637215/@11.3599171,77.8266801,21z/data=!4m15!1m6!4m5!1m0!1m3!2m2!1d77.82657!2d11.360025!4m7!1m0!1m5!1m1!1s0x3ba96402c071b689:0xe2c5e2b1ee2b8f31!2m2!1d77.8265767!2d11.3600256">Parking Lot</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R5G%2BPMC+Favorite+Canteen,+Tiruchengode,+Tamil+Nadu+637215/@11.359406,77.826506,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96529081fc8af:0xac9e048676bf588!2m2!1d77.8267247!2d11.3592943">Fresh Juice Shop</option></li>
-		</select>
-		<select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 160px; height: 65px; font-size: 20px; background-color:  #0052A7 ; color: white;">
-		<li><option value="" selected>Department</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R6H%2BV5M+KSR+College+of+Technology-Nano+Technology+Department,+KSR+Institute+Rd,+Namakkal,+Tamil+Nadu+637215/@11.3621747,77.8278657,21z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba966a8308965c3:0x67dd0499db199caf!2m2!1d77.8278697!2d11.3622344!3e0">Nano Technology</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//Dental+Block,+Tamil+Nadu+637215/@11.362392,77.8269363,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a83c013d63:0xa350c314732a3ddc!2m2!1d77.8269899!2d11.3624255">Dental</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R6G%2BRQJ+Department+Of+Textile+Technology,+Tiruchengode,+Tamil+Nadu+637215/@11.3621406,77.8267402,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba967a0355c992b:0xd1c86269bf074b02!2m2!1d77.8268683!2d11.3620456">Textile Technology</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//department+of+biotechnology,+Department+of+Biotechnology,+KSR+Dental+Hospital+Rd,+Tamil+Nadu+637215/@11.3617856,77.8266557,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a81f9f4123:0x8f7b1d94927de341!2m2!1d77.8266373!2d11.3616101">BioTechnology</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//Automobile+Block,+Tamil+Nadu+637215/@11.3616453,77.8273578,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba964029d867123:0xd0f88ab92230b6b5!2m2!1d77.8272133!2d11.3614339">AutoMobile</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//Civil+Block,+KSR+Institute+Rd,+Tamil+Nadu+637215/@11.3616045,77.8273417,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a82a22e435:0x467a4aff0bee6f9b!2m2!1d77.8278387!2d11.361634">Civil</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//Mechanical+Block,+KSR+Institute+Rd,+Tamil+Nadu+637209/@11.3618129,77.8279123,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96402801de271:0x232cb35a294f9657!2m2!1d77.827928!2d11.3618988">Mechanical</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//New+Administrative+Block,+Tamil+Nadu+637215/@11.360399,77.827411,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba964028dcd3547:0xc1520642aa0fd7bb!2m2!1d77.8276151!2d11.3604004">New Administrative Block</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//9R5G%2BXX6+IT+Park,+KSRCT,+Tamil+Nadu+637215/@11.3599171,77.8273721,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96402ed828d99:0x2475158f6fa329f2!2m2!1d77.8274006!2d11.3599139">CSE & IT </option></li>
-		<li><option value="https://www.google.co.in/maps/dir//New+Academic+Block,+9R5H%2BG93,+Tamil+Nadu+637215/@11.3587384,77.8282645,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba9640254b6203f:0x18cf593306262086!2m2!1d77.8284198!2d11.35877">Academic Block</option></li>
-		<li><option value="https://www.google.co.in/maps/dir//KSR+E%26I+BLOCK,+9R5H%2BQ62,+Thiruchengodu,+Tamil+Nadu+637215/@11.3593827,77.8278554,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96402f825c4cd:0x939b541181d2c213!2m2!1d77.8280248!2d11.3593978">E&I Block</option></li>
-			
-		</select>
-		<li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsLZfJcswWnsDHCRbNMZncMRbnKSZVPWLLZwRHFPmWxZRSdHrlxzsNRkPfnQsTLTCSsVB" target="blank">Email</a></li>
-		<li><a href="https://fees.ksrctdigipro.in/">Fees Payment</a></li>
-		</ul>
-	</nav>
-	<div class="video">
-		<video autoplay loop muted plays-inline>
-			<source src="vdo.MP4" type="video/MP4">
-		</video>
-	</div>
-	<div class="icon">
-		<ul><li><h2><center><a href="https://www.facebook.com/ksrct1994/" target="_blank"><ion-icon name="logo-facebook"style="color: #4267B2
-	;font-size:50px;"></ion-icon></a></h2></center></li>
-	<li><h2><center><a href="https://twitter.com/Ksrct1994? lang=en" target="_blank"></center><ion-icon name="logo-twitter"style="color: #00acee; font-size: 50px;"></ion-icon></a></h2></center></li>
-	<li><h2><center><a href="https://www.instagram.com/ksrct1994/?hl=en" target="_blank"></center>
-		<ion-icon name="logo-instagram"style="color: #8a3ab9; font-size: 50px;"></ion-icon></li></a></h2>
-	<li><h2><center><a href="https://www.youtube.com/c/KSRCTCMS?app=desktop"target="_blank"><ion-icon name="logo-youtube"style="color: #FF0000; font-size:50px"></ion-icon></a></center></h2></li>
-	<li><h2><center><a href="https://in.linkedin.com/school/ksrct1994/"target="_blank"><ion-icon name="logo-linkedin"style="color: #0072b1; font-size:50px"></ion-icon></a></center></h2></li>
-	</ul>
-	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-	</div>
+    <div class="main">
+        <div class="navbar">
+            <div >
+                <h2 class="logo">KSRCT</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                  <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 120px; height: 55px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
+                    <li><option value="" selected>LOGIN</option></li>
+                    <li><option value="http://ctcms.ksrct.net/Student/Index.asp" target="blank" >Student Login</option></li>
+            <li><option value="http://ctcms.ksrct.net/Faculty/Index.asp" target="blank">Faculty Login</option></li>
+                <li><option value ="https://www.ksrctdigipro.in/" target="blank">Digipro</option></li>
+                
+                    </select>
+                     <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
+                    <li><option value="" selected>LOCATION</option></li>
+                    <li><option value="https://www.google.co.in/maps/dir//K.+S.+Rangasamy+College+of+Technology,+KSR+Kalvi+Nagar,+Tiruchengode,+Namakkal,+Tamil+Nadu+637215/@11.3627573,77.8257303,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba964016c607823:0x580736a65c2b0005!2m2!1d77.827919!2d11.362752!3e0" target="blank">College</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//9R7H%2BC87+Lakshmi+Vilas+Bank+ATM,+K.S.+Ranga+Swamy+Institute+of+Technology,+Erode+Main+Road+Paramasiva+Goundampalayam,+THOKKAVADI,+SH+79,+KSR+Kalvi+Nagar,+Tamil+Nadu+637215/@11.363533,77.8280023,21z/data=!4m20!1m10!4m9!1m0!1m6!1m2!1s0x3ba964016c607823:0x580736a65c2b0005!2sK.+S.+Rangasamy+College+of+Technology,+KSR+Kalvi+Nagar,+Tiruchengode,+Namakkal,+Tamil+Nadu+637215!2m2!1d77.827919!2d11.362752!3e0!4m8!1m0!1m5!1m1!1s0x3ba966a9b25eb5d1:0x1932e1a813da22!2m2!1d77.8283073!2d11.3635419!3e0">Lakshmi vilas Bank</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//9R7H%2B56P+KSRCT+Principal+Office,+KSR+Institute+Rd,+Tamil+Nadu+637215/@11.3629104,77.8280505,20.25z/data=!4m20!1m10!4m9!1m0!1m6!1m2!1s0x3ba966a84abdb47f:0xe41969e1cfeccaa4!2s9R7H%2B56P+KSRCT+Principal+Office,+KSR+Institute+Rd,+Tamil+Nadu+637215!2m2!1d77.828005!2d11.3631027!3e0!4m8!1m0!1m5!1m1!1s0x3ba966a84abdb47f:0xe41969e1cfeccaa4!2m2!1d77.828005!2d11.3631027!3e0"> Principal Office</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//KSR+Founder+Hall,+Auditorium,+Tamil+Nadu+637215/@11.3627566,77.826215,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba966a9ca4b15bf:0x10b7566bd4ce37e2!2m2!1d77.8283899!2d11.3627698!3e0">Founder Hall</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//9R7H%2B67C+Conference+Hall+Ksrct,+Thiruchengodu,+Tamil+Nadu+637215/@11.3630725,77.8259603,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba966a9b4d7dd21:0x3b6e7ee79b61d22a!2m2!1d77.8281451!2d11.3630752!3e0">Conference Hall</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//KSR+Institutions+Bike+Parking,+KSR+College,+KSR+Kalvi+Nagar,+Tamil+Nadu+637215/@11.3630189,77.8283542,21z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba967cfd1e24e47:0x2b0a8a36b2515d48!2m2!1d77.8286021!2d11.3632007!3e0">Bike Parking</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//Placement+And+Training+Cell,+KSRCT,+KSR+Institute+Rd,+Tamil+Nadu+637215/@11.3621247,77.8279183,20.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba966a82c2001a9:0x2f438515cc28d5b7!2m2!1d77.8278202!2d11.3619303!3e0">Placement & Training cell</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//9R6G%2BVVV+KSR+Food+Court+5,+Tiruchengode,+Tamil+Nadu+637215/@11.362372,77.8272109,20.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba967a34ed6de11:0xe2b1e4a7c27a6cc4!2m2!1d77.8271826!2d11.362225">Food Court 5</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//KSR+Dental+Hospital,+KSR+Educational+Institutions,+KSR+Institute+Rd,+Tiruchengode,+Tamil+Nadu+637215/@11.3620249,77.8263325,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a81c39e8e3:0xd5e203090c3a3448!2m2!1d77.8263195!2d11.3616567">Dental Hospital</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//KSR+Institute+of+Dental+Science+and+Research,+KSR+Kalvi+Nagar,+Thokkavadi,+Tamil+Nadu+637215/@11.3619355,77.826826,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a83eac281f:0x586cf9d0378aecb0!2m2!1d77.826307!2d11.361713">Dental & Research</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//Ksrct+Library,+KSRCT+Library+Block,+KSR+Library,+KSR+Institute+Rd,+Thiruchengodu,+Tamil+Nadu+637215/@11.3619881,77.8266249,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a8264f20f5:0x5b8b0f1e0e5581ea!2m2!1d77.8274412!2d11.3616509">Library</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//9R6H%2BH29+Laxmi+Vilas+Bank+%26+ATM,+Tamil+Nadu+637215/@11.3614421,77.8275348,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba9640284f1e40f:0x1722deb6753d292b!2m2!1d77.8276155!2d11.3614021">Lakshmi Vilas ATM</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//Works+and+Soil+Lab,+Labs,+Tamil+Nadu+637215/@11.3616005,77.827848,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96402801dd62d:0x29b0fc2401e784d3!2m2!1d77.8281244!2d11.3614937">Work & soil Lab</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//9R6H%2BG2Q+Canteen+2,+KSR+Institute+Rd,+Tamil+Nadu+637215/@11.3613517,77.8273657,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba964028256253f:0x808a1840d0532584!2m2!1d77.8276026!2d11.3613536">Canteen</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//Dental+Ladies+Hostel,+Tamil+Nadu+637215/@11.3608249,77.8271571,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba9640299c6b56b:0x4a29fb973bbe549b!2m2!1d77.8270122!2d11.3608815">Dental Ladies Hostel</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//9R6G%2B3Q7+KSR+College+Staff+Quarters,+KSR+Kalvi+Nagar,+Thokkavadi,+Tamil+Nadu/@11.3602938,77.8270965,21z/data=!4m15!1m6!3m5!1s0x3ba9640294e1aea5:0xc5f791862fac74b3!2sKSR+College+Staff+Quarters!8m2!3d11.3601499!4d77.82698!4m7!1m0!1m5!1m1!1s0x3ba9640294e1aea5:0xc5f791862fac74b3!2m2!1d77.82698!2d11.3601499">Staff Quarters</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//9R5G%2BXX6+IT+Park,+KSRCT,+Tamil+Nadu+637215/@11.3599171,77.8273721,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96402ed828d99:0x2475158f6fa329f2!2m2!1d77.8274006!2d11.3599139">IT Park</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//Parking+Lot,+Tamil+Nadu+637215/@11.3599171,77.8266801,21z/data=!4m15!1m6!4m5!1m0!1m3!2m2!1d77.82657!2d11.360025!4m7!1m0!1m5!1m1!1s0x3ba96402c071b689:0xe2c5e2b1ee2b8f31!2m2!1d77.8265767!2d11.3600256">Parking Lot</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//9R5G%2BPMC+Favorite+Canteen,+Tiruchengode,+Tamil+Nadu+637215/@11.359406,77.826506,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96529081fc8af:0xac9e048676bf588!2m2!1d77.8267247!2d11.3592943">Fresh Juice Shop</option></li>
+                </select>
+                 <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
+                    <li><option value="" selected>DEPARTMENT</option></li>
+                <li><option value="https://www.google.co.in/maps/dir//9R6H%2BV5M+KSR+College+of+Technology-Nano+Technology+Department,+KSR+Institute+Rd,+Namakkal,+Tamil+Nadu+637215/@11.3621747,77.8278657,21z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba966a8308965c3:0x67dd0499db199caf!2m2!1d77.8278697!2d11.3622344!3e0">Nano Technology</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//Dental+Block,+Tamil+Nadu+637215/@11.362392,77.8269363,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a83c013d63:0xa350c314732a3ddc!2m2!1d77.8269899!2d11.3624255">Dental</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//9R6G%2BRQJ+Department+Of+Textile+Technology,+Tiruchengode,+Tamil+Nadu+637215/@11.3621406,77.8267402,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba967a0355c992b:0xd1c86269bf074b02!2m2!1d77.8268683!2d11.3620456">Textile Technology</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//department+of+biotechnology,+Department+of+Biotechnology,+KSR+Dental+Hospital+Rd,+Tamil+Nadu+637215/@11.3617856,77.8266557,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a81f9f4123:0x8f7b1d94927de341!2m2!1d77.8266373!2d11.3616101">BioTechnology</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//Automobile+Block,+Tamil+Nadu+637215/@11.3616453,77.8273578,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba964029d867123:0xd0f88ab92230b6b5!2m2!1d77.8272133!2d11.3614339">AutoMobile</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//Civil+Block,+KSR+Institute+Rd,+Tamil+Nadu+637215/@11.3616045,77.8273417,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a82a22e435:0x467a4aff0bee6f9b!2m2!1d77.8278387!2d11.361634">Civil</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//Mechanical+Block,+KSR+Institute+Rd,+Tamil+Nadu+637209/@11.3618129,77.8279123,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96402801de271:0x232cb35a294f9657!2m2!1d77.827928!2d11.3618988">Mechanical</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//New+Administrative+Block,+Tamil+Nadu+637215/@11.360399,77.827411,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba964028dcd3547:0xc1520642aa0fd7bb!2m2!1d77.8276151!2d11.3604004">New Administrative Block</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//9R5G%2BXX6+IT+Park,+KSRCT,+Tamil+Nadu+637215/@11.3599171,77.8273721,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96402ed828d99:0x2475158f6fa329f2!2m2!1d77.8274006!2d11.3599139">CSE & IT </option></li>
+        <li><option value="https://www.google.co.in/maps/dir//New+Academic+Block,+9R5H%2BG93,+Tamil+Nadu+637215/@11.3587384,77.8282645,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba9640254b6203f:0x18cf593306262086!2m2!1d77.8284198!2d11.35877">Academic Block</option></li>
+        <li><option value="https://www.google.co.in/maps/dir//KSR+E%26I+BLOCK,+9R5H%2BQ62,+Thiruchengodu,+Tamil+Nadu+637215/@11.3593827,77.8278554,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96402f825c4cd:0x939b541181d2c213!2m2!1d77.8280248!2d11.3593978">E&I Block</option></li>
+    </select>
+            <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
+                    <li><option value=""selected>TRANSPORT</option></li>
+                        <li><option value="Salem.html">Salem</option></li>
+        <li><option value="namakkal.jpg">Namakkal</option></li>
+        <li><option value="Erode.html">Erode</option></li>
+        <li><option value="karur.jpg">Karur</option></li>
+        <li><option value="tiruppur.jpg">Tiruppur</option></li>
+                </select>
+                <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 35px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
+                    <li><option value="" selected>ABOUT </option></li>
+                     <li><option value="about.html" >ABOUT KSR </option></li>
+                </select>
+                 <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
+                    <li><option value="" selected>GUIDELINES</option></li>
+                    <li><option value="guide.html">IT PARK</option></li>
+                </select>
+                </ul>
+            </div>
+            <div class="video">
+                <video autoplay loop muted plays-inline>
+                    <source src="vdo.MP4" type="video/MP4">
+                </video>
+            </div>
+        </div> 
+        <div class="content">
+        <h2>K.S.RANGASAMY COLLEGE OF TECHNOLOGY <br><span>Lion. Dr. K. S. Rangasamy</span></h2>
+            <p class="par">Lion. Dr. K. S. Rangasamy, MJF., the Founder Chairman of the college is a well-known philanthropist in this part of the country. He hails from a village in Tiruchengode, Namakkal District, Tamil Nadu. In a mission to take education to every nook and corner of his region, which was then an educationally backward area, he started the Aarthi Educational and Charitable Trust. Following this, he started various educational institutions in Tiruchengode and KSR College of Engineering is one among them. His amazing contribution to the field of education has earned him the title ‘KalviRathna’. He has been conferred with an Honorary Doctorate by the West University of USA, to acknowledge his exemplary contribution to education. He is also involved in the Textile industry and trade.</p>
+
+                <button class="cn"><a href="https://fees.ksrctdigipro.in/" target="blank">Fees Payment</a></button>
+
+
+                    <div class="icons">
+                       <a href="https://www.facebook.com/ksrct1994/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                       <a href="https://twitter.com/Ksrct1994? lang=en" target="_blank"></center><ion-icon name="logo-twitter"></ion-icon></a>
+                       <a href="https://www.instagram.com/ksrct1994/?hl=en" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                     <a href="https://www.youtube.com/c/KSRCTCMS?app=desktop"target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                        <a href="https://in.linkedin.com/school/ksrct1994/"target="_blank"><ion-icon name="logo-linkedin"></ion-icon>
+                     
+                    </div>
+                   
+                </div>
+                
+                    </div>
+                </div>
+                
+        </div>
+        
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
 </body>
 </html>
