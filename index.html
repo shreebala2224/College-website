@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
-    <title>KSR College</title>
-    <link rel="stylesheet" href="ksrstyle.css">
-    <!-- CSS only -->
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sc.js">
+  <link rel="stylesheet" type="text/css" href="sc.css">
+  <title>My Website</title>
 </head>
+
 <body>
-
-    <div class="main">
-        <div class="navbar">
-            <div >
-                <h2 class="logo">KSRCT</h2>
-            </div>
-
-            <div class="menu">
-                <ul>
-                  <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 120px; height: 55px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>K</span>SRCT</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"> </div>
+          </div>
+          <ul>
+            
+             <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 120px; height: 55px; font-size: 16px; background-color: transparent; color: white; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; border: none;">
                     <li><option value="" selected>LOGIN</option></li>
                     <li><option value="http://ctcms.ksrct.net/Student/Index.asp" target="blank" >Student Login</option></li>
             <li><option value="http://ctcms.ksrct.net/Faculty/Index.asp" target="blank">Faculty Login</option></li>
@@ -25,7 +33,7 @@
                 <li><option value="https://fees.ksrctdigipro.in/">Fees Payment</option></li>
                 
                     </select>
-                     <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
+                    <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color: transparent; color: white; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px;  border: none;">
                     <li><option value="" selected>LOCATION</option></li> 
                     <li><option value="https://www.google.co.in/maps/dir//K.+S.+Rangasamy+College+of+Technology,+KSR+Kalvi+Nagar,+Tiruchengode,+Namakkal,+Tamil+Nadu+637215/@11.3627573,77.8257303,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba964016c607823:0x580736a65c2b0005!2m2!1d77.827919!2d11.362752!3e0" target="blank">College</option></li>
         <li><option value="https://www.google.co.in/maps/dir//9R7H%2BC87+Lakshmi+Vilas+Bank+ATM,+K.S.+Ranga+Swamy+Institute+of+Technology,+Erode+Main+Road+Paramasiva+Goundampalayam,+THOKKAVADI,+SH+79,+KSR+Kalvi+Nagar,+Tamil+Nadu+637215/@11.363533,77.8280023,21z/data=!4m20!1m10!4m9!1m0!1m6!1m2!1s0x3ba964016c607823:0x580736a65c2b0005!2sK.+S.+Rangasamy+College+of+Technology,+KSR+Kalvi+Nagar,+Tiruchengode,+Namakkal,+Tamil+Nadu+637215!2m2!1d77.827919!2d11.362752!3e0!4m8!1m0!1m5!1m1!1s0x3ba966a9b25eb5d1:0x1932e1a813da22!2m2!1d77.8283073!2d11.3635419!3e0">Lakshmi vilas Bank</option></li>
@@ -51,7 +59,7 @@
           <li><option value="https://www.google.co.in/maps/dir//9R4G%2BMJM+KSR+Food+Court+2,+Thiruchengodu,+Tamil+Nadu+637215/@11.3566058,77.825869,19.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba964034302d0c9:0x1433551f73dd9eea!2m2!1d77.826579!2d11.35673">Food Court 2</option></li>
          <li><option value="https://www.google.co.in/maps/dir//9R5J%2B39R+KSR+Food+Court+3,+KSR+Institute+Rd,+Thiruchengodu,+Tamil+Nadu+637215/@11.3578396,77.8308964,20.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96403dfe7dd59:0x60daa93b75078746!2m2!1d77.8308841!2d11.3577326"> Food Court 3</option></li>
                 </select>
-                 <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
+                <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color: transparent; color:white; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; border: none; ">
                     <li><option value="" selected>DEPARTMENT</option></li>
                 <li><option value="https://www.google.co.in/maps/dir//9R6H%2BV5M+KSR+College+of+Technology-Nano+Technology+Department,+KSR+Institute+Rd,+Namakkal,+Tamil+Nadu+637215/@11.3621747,77.8278657,21z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3ba966a8308965c3:0x67dd0499db199caf!2m2!1d77.8278697!2d11.3622344!3e0">Nano Technology</option></li>
         <li><option value="https://www.google.co.in/maps/dir//Dental+Block,+Tamil+Nadu+637215/@11.362392,77.8269363,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba966a83c013d63:0xa350c314732a3ddc!2m2!1d77.8269899!2d11.3624255">Dental</option></li>
@@ -65,7 +73,7 @@
         <li><option value="https://www.google.co.in/maps/dir//New+Academic+Block,+9R5H%2BG93,+Tamil+Nadu+637215/@11.3587384,77.8282645,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba9640254b6203f:0x18cf593306262086!2m2!1d77.8284198!2d11.35877">Academic Block</option></li>
         <li><option value="https://www.google.co.in/maps/dir//KSR+E%26I+BLOCK,+9R5H%2BQ62,+Thiruchengodu,+Tamil+Nadu+637215/@11.3593827,77.8278554,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96402f825c4cd:0x939b541181d2c213!2m2!1d77.8280248!2d11.3593978">E&I Block</option></li>
     </select>
-            <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
+      <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color: transparent; color: white; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px;  border: none;">
                     <li><option value=""selected>TRANSPORT</option></li>
                         <li><option value="salem.html">Salem</option></li>
         <li><option value="namakkal2.jpeg">Namakkal</option></li>
@@ -73,51 +81,178 @@
         <li><option value="Karur (2).jpeg">Karur</option></li>
         <li><option value="Tiruppur (2).jpeg">Tiruppur</option></li>
                 </select>
-                <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 35px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
-                    <li><option value="" selected>ABOUT </option></li>
-                     <li><option value="about.html" >ABOUT KSR </option></li>
-                </select>
-                 <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color:  white; color: black; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px; ">
+                 <select onchange="this.options[this.selectedIndex].value &&(window.location=this.options[this.selectedIndex].value);" style="float: right; width: 140px; height: 55px; font-size: 16px; background-color:transparent; color:white; font-family: Arial; font-weight: bold; margin-left: 62px; margin-top: 5px;border: none;">
                     <li><option value="" selected>GUIDELINE </option></li>
                      <li><option value="guide.html">IT Park</option></li>
                 </select>
-                </ul>
-            </div>
-            <div class="video">
-                <video controls>
-                    <source src="vdo.MP4" type="video/MP4">
-                </video>
-            </div>
-        </div> 
-        <div class="content">
-         <h1><img src="2.png" width="80"> K.S.RANGASAMY COLLEGE OF TECHNOLOGY <img src="1.png" width="70"> <br><br></h1><h2><span>Lion. Dr. K. S. Rangasamy</span></h2>
-            <p class="par">Lion. Dr. K. S. Rangasamy, MJF., the Founder Chairman of the college is a well-known philanthropist in this part of the country. He hails from a village in Tiruchengode, Namakkal District, Tamil Nadu. In a mission to take education to every nook and corner of his region, which was then an educationally backward area, he started the Aarthi Educational and Charitable Trust. Following this, he started various educational institutions in Tiruchengode and KSR College of Engineering is one among them. His amazing contribution to the field of education has earned him the title ‘KalviRathna’. He has been conferred with an Honorary Doctorate by the West University of USA, to acknowledge his exemplary contribution to education. He is also involved in the Textile industry and trade.<br>
-           A world of excellence awaits you. Step in today and empower yourself at KSRCT</p>
-           <br>
-                <button class="cn"><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBncJJcjlRMRtHfBqQZGJHjTtbkkNVHwxwKfHVZxtkCrjFJvTbNfPfPWTLlcpJpqltnTKDw">E-MAIL</a></button>
-                <br>
-                <br>
-                    <div class="icons">
-                        <a href="https://ksrct.ac.in/"target="_blank"><ion-icon name="home"></ion-icon>
-                       <a href="https://www.facebook.com/ksrct1994/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-                       <a href="https://twitter.com/Ksrct1994? lang=en" target="_blank"></center><ion-icon name="logo-twitter"></ion-icon></a>
-                       <a href="https://www.instagram.com/ksrct1994/?hl=en" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                     <a href="https://www.youtube.com/c/KSRCTCMS?app=desktop"target="_blank"><ion-icon name="logo-youtube" ></ion-icon></a>
-                        <a href="https://in.linkedin.com/school/ksrct1994/"target="_blank"><ion-icon name="logo-linkedin"></ion-icon>
-                             
-                           
-                    </div>
-                   
-                </div>
-                
-                    </div>
-                </div>
-                
+            
+          </div>  
+          </ul>
         </div>
-        
+      </div>
     </div>
+  </section>
+  <!-- End Header -->
 
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>K.S.RANGASAMY COLLEGE OF TECHNOLOGY<span></span></h1>
+        <a href="" type="button" class="cta">E-MAIL</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title"> <span>Reasons to Love K.S.Rangasamy College of Technology</span></h1>
+      </div>
+      <div class="all-projects">
+        
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Alumi</h1>
+            
+            <p>Greetings from K.S.Rangasamy College of Technology! It really makes us feel very proud to have a student like you!</p>
+          </div>
+          <div class="project-img">
+            <img src="alumi.jpeg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Placements</h1>
+           
+            <p>KSR College of Engineering, Tiruchengode has a dedicated training and placement cell and a placement team that conducts the campus placements. KSR College of Engineering placement cell serves as a liaison between institutes and companies with industries. The placement cell at KSR College of Engineering invites companies to the campus to be  a part of the on-campus placement drive and hire students as per their needs. KSR College of Engineering placement cell meets the needs of students by offering training programmes that are integrated into the regular academic schedule. </p>
+          </div>
+          <div class="project-img">
+            <img src="place.jpeg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1><a href="C:\Users\91638\OneDrive\Desktop\boo\vdo.mp4" style="color:crimson;"> Infrastructure</a></h1>
+            <h2>Click</h2>
+            
+            <p>The department has fully equipped laboratories with latest equipment and software catering to the requirements of the curriculum as well as for pursuing research, which are of help to the students and faculty to enhance their skills.</p>
+          </div>
+          <div class="project-img">
+            <img src="infra.jpeg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Programmes</h1>
+            
+            <p>The institution offers graduate and post – graduate courses in all disciplines of Engineering and Technology. It is well ahead in its road map in producing most competent Scientists, Engineers, and Entrepreneurs through quality education.</p>
+          </div>
+          <div class="project-img">
+            <img src="prog.jpeg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+         <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="chairman.jpeg" style="width:100% ;height: 400px;">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="vice.jpeg" style="width:100%;height: 400px;">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="dr.jpeg" style="width:100%;height:400px;">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>Lion K.S.RANGASAMY</span></h1>
+       
+        <p>Lion. Dr. K. S. Rangasamy, MJF., the Founder Chairman of the college is a well-known philanthropist in this part of the country. He hails from a village in Tiruchengode, Namakkal District, Tamil Nadu. In a mission to take education to every nook and corner of his region, which was then an educationally backward area, he started the Aarthi Educational and Charitable Trust. Following this, he started various educational institutions in Tiruchengode and KSR College of Engineering is one among them. His amazing contribution to the field of education has earned him the title ‘KalviRathna’. He has been conferred with an Honorary Doctorate by the West University of USA, to acknowledge his exemplary contribution to education. He is also involved in the Textile industry and trade.<br>
+           A world of excellence awaits you. Step in today and empower yourself at KSRCT</p>
+        
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+   <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+      <div class="icons">
+        <a href="https://ksrct.ac.in/"target="_blank"><ion-icon name="home" style="color: brown;"></ion-icon>
+                       <a href="https://www.facebook.com/ksrct1994/" target="_blank"><ion-icon name="logo-facebook"style="color:  #4267B2;" ></ion-icon></a>
+                       <a href="https://twitter.com/Ksrct1994? lang=en" target="_blank"></center><ion-icon name="logo-twitter" style="color: #00acee;" ></ion-icon></a>
+                       <a href="https://www.instagram.com/ksrct1994/?hl=en" target="_blank"><ion-icon name="logo-instagram"style="color:  #8a3ab9 ;" ></ion-icon></a>
+                     <a href="https://www.youtube.com/c/KSRCTCMS?app=desktop"target="_blank"><ion-icon name="logo-youtube" style="color: #FF0000;" ></ion-icon></a>
+                        <a href="https://in.linkedin.com/school/ksrct1994/"target="_blank"><ion-icon name="logo-linkedin"style="color: #0077b5;" ></ion-icon>
+      </div>
+     </div>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  
 </body>
 
 </html>
