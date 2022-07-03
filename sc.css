@@ -367,6 +367,7 @@ p {
 }
 #about .col-right p {
   margin-bottom: 20px;
+  text-align:justify;
 }
 #about .col-right .cta {
   color: black;
