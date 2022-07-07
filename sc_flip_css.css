@@ -1,3 +1,9 @@
+html{
+  background: url(bg2.jpg);
+  background-repeat: no-repeat;
+ background-size: 2236px;
+
+ }
 body {
   font-family: sans-serif;
   margin-top: 80px;
